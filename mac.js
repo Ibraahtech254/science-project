@@ -164,7 +164,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t🌍BMW-MD ONLINE🌍");
+            console.log("\tMAC MD V2.0");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -802,18 +802,18 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Bmw is connecting...");
+                console.log("ℹ️ mac is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Bmw Connected to WhatsApp! ☺️");
+                console.log("✅ mac Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Bmw Md is Online 🕸\n\n");
+                console.log("mac Md is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading Bmw Commands ...\n");
+                console.log("Loading mac Commands ...\n");
                 fs.readdirSync(__dirname + "/bmw").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
@@ -850,14 +850,8 @@ zk.ev.on('group-participants.update', async (group) => {
 ╰─────────────━┈⊷
 │💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
 │⭕ ᴍᴏᴅᴇ: *${md}*
-│📍 ᴠᴇʀꜱɪᴏɴ: *6.0.3*
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ʙᴍᴡ ᴍᴅ*
-│👨‍💻 ᴏᴡɴᴇʀ : *sɪʀ ɪʙʀᴀʜɪᴍ*
-|💢 Plugins  : ${evt.cm.length}
 ╰─────────────━┈⊷
 
-*Join Whatsapp Channel For Updates*
-> https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y
                 
                 
                  `;
