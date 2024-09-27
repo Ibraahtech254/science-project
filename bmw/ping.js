@@ -12,3 +12,13 @@ zokou({ nomCom: "test", reaction: "🧒", nomFichier: __filename }, async (dest,
 });
 console.log("mon test");
 
+zokou({ nomCom: "repo", reaction: "🧒", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+    console.log("Commande saisie !!!s");
+    let z = '*MAC MD V2.0 GITHUB LINK* 🙏 \n\n ' + "Star And Fork";
+    let d = '                                                                           https://github.com/Maccoder3/MAC MD V2.0';
+    let varmess = z + d;
+    var img = 'https://files.catbox.moe/sti9pk.jpg';
+    await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
+    //console.log("montest")
+});
+console.log("mon test");
