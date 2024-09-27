@@ -1,6 +1,6 @@
 const {
-  king
-} = require("../france/king");
+  zokou
+} = require("../framework/zokou");
 const yts = require("yt-search");
 king({
   'nomCom': "play",
@@ -56,7 +56,7 @@ king({
     _0x19cdef("An error occurred while searching or downloading the audio.");
   }
 });
-king({
+zokou({
   'nomCom': "song",
   'categorie': "Search",
   'reaction': '💿'
@@ -110,7 +110,7 @@ king({
     _0x5ed249("An error occurred while searching or downloading the audio.");
   }
 });
-king({
+zokou({
   'nomCom': "video",
   'categorie': "Search",
   'reaction': '🎥'
