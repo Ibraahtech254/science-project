@@ -57,11 +57,11 @@ zokou({ nomCom: "dev", categorie: "General", reaction: "🚘" }, async (dest, zk
     const devs = [
       { nom: "Adams", numero: "254739937062" },
       { nom: "᚛Ibrahim᚜", numero: "254710772666" },
-      { nom: "BELTAH TECH", numero: "254114141192" },
+      { nom: "Mac Tech", numero: "256705036288" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "WELCOME TO BMW HELP CENTER! ASK FOR HELP FROM ANY OF THE DEVELOPERS BELOW:\n\n";
+    let message = "WELCOME TO MAC HELP CENTER! ASK FOR HELP FROM ANY OF THE DEVELOPERS BELOW:\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
